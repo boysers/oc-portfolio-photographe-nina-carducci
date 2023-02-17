@@ -93,6 +93,7 @@ img {
 #about-me p {
 	width: 80%;
 	font-size: 14px;
+	margin: 0;
 }
 
 #gallery {
@@ -107,7 +108,7 @@ img {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #5E5A26;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
