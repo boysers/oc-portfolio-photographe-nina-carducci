@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/boysers/oc-portfolio-photographe-nina-carducci#readme",
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/transformer-jsonld": "^2.8.3",
     "parcel": "^2.8.3"
   }
 }
