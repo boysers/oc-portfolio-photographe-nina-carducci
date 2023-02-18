@@ -1,6 +1,0 @@
-# Cache Control
-<IfModule mod_headers.c>
-  <FilesMatch "\.(jpg|jpeg|png|gif|webp|js|css)$">
-    Header set Cache-Control "max-age=2592000, public"
-  </FilesMatch>
-</IfModule>

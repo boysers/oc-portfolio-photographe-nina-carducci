@@ -10,13 +10,14 @@
     />
 
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/style.min.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
+      defer
     />
 
     <title>Nina Carducci - Photographe</title>
@@ -76,13 +77,27 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img
-              src="./assets/images/slider/ryoji-iwata.webp"
-              class="d-block w-100"
-              alt="photo de ryoji iwata"
-              width="1920"
-              height="888"
-            />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="./assets/images/slider/ryoji-iwata-small.webp"
+              />
+              <source
+                media="(max-width: 1024px)"
+                srcset="./assets/images/slider/ryoji-iwata-medium.webp"
+              />
+              <source
+                media="(min-width: 1025px)"
+                srcset="./assets/images/slider/ryoji-iwata.webp"
+              />
+              <img
+                src="./assets/images/slider/ryoji-iwata.webp"
+                width="1920"
+                height="888"
+                class="d-block w-100"
+                alt="photo de ryoji iwata"
+              />
+            </picture>
           </div>
           <div class="carousel-item">
             <img
@@ -133,7 +148,6 @@
           alt="photo de nina"
           width="560"
           height="558"
-          loading="lazy"
         />
       </div>
       <div id="about-me">
@@ -364,7 +378,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./assets/maugallery.min.js"></script>
-    <script src="./assets/scripts.min.js"></script>
+    <script src="./assets/maugallery.js"></script>
+    <script src="./assets/scripts.js"></script>
   </body>
 </html>
